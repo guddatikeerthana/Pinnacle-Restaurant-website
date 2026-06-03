@@ -1,0 +1,214 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:#ff9800;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+}
+
+.nav-links a:hover{
+    color:#ff9800;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,.6);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h1{
+    color:white;
+    font-size:55px;
+}
+
+.hero p{
+    color:#ddd;
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+.menu-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.menu-section h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.menu-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    padding:0 15px;
+}
+
+.card span{
+    display:block;
+    color:#ff9800;
+    font-size:22px;
+    margin:15px;
+    font-weight:bold;
+}
+
+.about{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:80px 8%;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+}
+
+.contact button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:70px;
+        right:0;
+        width:200px;
+        background:#111;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
